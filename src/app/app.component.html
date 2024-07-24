@@ -1,9 +1,4 @@
-<div>
-  <h1>{{ title }}</h1>
-  <ul>
-    <li *ngFor="let post of posts">
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.body }}</p>
-    </li>
-  </ul>
+<div *ngFor="let post of posts">
+  <h3>{{ post.title }}</h3>
+  <p>{{ post.body }}</p>
 </div>
